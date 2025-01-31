@@ -1,0 +1,5 @@
+# Ignore everything in dist/
+dist/*
+
+# But keep the CNAME file
+!dist/CNAME
