@@ -3,16 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <title>AdamWicks.com</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <div>
-        <img src="underconstruction.gif">
-        <h1>Adam Wicks</h1>
-        <ul>
-        	<li><a href="/secretcodes">secretcodes.js - Add silly "cheat codes" to your website</a></li>
-        </ul>
-    </div>
+
+    <header>
+        <div class="header-container">
+            <h1>AdamWicks.com</h1>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Top</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Welcome!</h2>
+            <p class="typewriter-container">
+                <span id="typewriter-text" 
+                class="js-typewriter typewriter-cursor"
+                data-text="I'm drawn to making things with code."
+		data-speed="80"
+		data-trigger="#intro"
+            	data-trigger-once="true">I'm drawn to making things with code.</span>
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="background-container">
+                <canvas id="waveCanvas"></canvas>
+            </div>
+
+            <div class="project-cards-container">
+                <div class="project-card">
+                    <a href="/secretcodes" class="card-link"> 
+                        <h3>secretcodes.js</h3>
+                        <p>Add videogame style "cheat codes" to your website</p>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <a href="#" class="card-link"> 
+                        <h3>More</h3>
+                        <p>soon</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="foot">
+        <p class="js-typewriter typewriter-cursor"
+		data-text="Made by Adam Wicks"
+		data-speed="80"
+		data-trigger="#foot"
+            	data-trigger-once="true">Made by Adam Wicks</p> 
+    </footer>
+
+    <script src="assets/script-grid.js"></script>
+    <script src="assets/script-typewriter.js"></script>
 </body>
 </html>
