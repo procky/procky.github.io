@@ -76,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		        // Retrieve configuration from data attributes
 		        const textToType = targetElement.dataset.text;
-		        console.log(targetElement.dataset.text);
 		        const speed = parseInt(targetElement.dataset.speed, 10) || 80; // Use data-speed or default to 80
 		        const triggerOnce = targetElement.dataset.triggerOnce !== 'false'; // Default to trigger only once
 
